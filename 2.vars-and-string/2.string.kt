@@ -8,6 +8,8 @@ fun main() {
     var myString = "Hello World!"
     println(myString[0]) // H
     println(myString.get(1)) // e
+    var explicit: String = "OOLA"\
+    println(explicit) // OOLA
 
     // ## Substring
     println(myString.substring(0, 5)) // Hello

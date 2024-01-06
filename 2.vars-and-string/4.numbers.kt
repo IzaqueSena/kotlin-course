@@ -50,5 +50,16 @@ fun main() {
     var afloat = 1.90f
     println(afloat::class.java) // float
 
+    // ## Number conversion
+    var cats = 3
+    var longCats = cats.toLong()
+    println(longCats::class.java)
+    println(cats::class.java)
+    println(longCats)
+    // toByte, toShort, toInt, toLong, toFloat, toDouble
+
+    var catString = cats.toString()
+    println(catString::class.java) // String
+    println(catString) // "3"
 
 }
