@@ -1,6 +1,7 @@
 fun main() {
     // # SET
     // UNORDERED collection of UNIQUE elements
+    // IMMUTABLE by default
 
     // # Creating a set
     val numbers = setOf(6, 37, 6, 52) // set of integers
