@@ -24,6 +24,9 @@ fun main() {
     // we can also add a list of elements at a specific index using addAll(index, list)
     colors.addAll(1, listOf("Pink", "Gray"))
     println(colors) // [Red, Pink, Gray, Purple, Green, Blue, Yellow, Orange, Brown]
+    // we can also add a list of elements using +=
+    colors += listOf("Violet", "White")
+    println(colors) // [Red, Pink, Gray, Purple, Green, Blue, Yellow, Orange, Brown, Violet, White]
 
     // # Removing elements
     // we can remove elements using remove(), remove the first occurrence of the element

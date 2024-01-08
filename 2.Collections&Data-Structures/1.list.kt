@@ -11,7 +11,7 @@ fun main() {
     val colors2 = listOf<String>() // list of strings
     println(colors2)
     // we can also create a list of nulls
-    val colors3 = listOf("Blue", "Red", null, null) // list of strings
+    val colors3 = listOf("Blue", "Red", null, null) // list of nullable strings, String?
     println(colors3)
 
     // # Accessing elements
