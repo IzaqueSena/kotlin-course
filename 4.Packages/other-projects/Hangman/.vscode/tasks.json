@@ -1,0 +1,44 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      // kotlinc src/*.kt -d out
+      {
+        "label": "Build Kotlin Project",
+        "type": "shell",
+        "command": "kotlinc",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "args": [
+          "src/*.kt",
+          "-d",
+          "out"
+        ],
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        },
+      },
+      // kotlin -cp out HangmanKt
+      {
+        "label": "Run Kotlin Project",
+        "type": "shell",
+        "command": "kotlin",
+        "group": {
+          "kind": "test",
+          "isDefault": true
+        },
+        "args": [
+          "-cp",
+          "out",
+          "HangmanKt"
+        ],
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated"
+        }
+      }
+    ]
+  }
+  

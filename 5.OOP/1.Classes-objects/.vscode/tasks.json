@@ -1,0 +1,44 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      // kotlinc src/com/**/*.kt -d out
+      {
+        "label": "Build Kotlin Project",
+        "type": "shell",
+        "command": "kotlinc",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "args": [
+          "src/com/**/*.kt",
+          "-d",
+          "out"
+        ],
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        },
+      },
+      // kotlin -cp out com.izaque.MainKt
+      {
+        "label": "Run Kotlin Project",
+        "type": "shell",
+        "command": "kotlin",
+        "group": {
+          "kind": "test",
+          "isDefault": true
+        },
+        "args": [
+          "-cp",
+          "out",
+          "com.izaque.MainKt"
+        ],
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated"
+        }
+      }
+    ]
+  }
+ 
